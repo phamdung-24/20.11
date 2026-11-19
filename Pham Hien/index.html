@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff8fa">
+  <meta name="description" content="Một bó hoa và tấm thiệp nhỏ, gửi những lời chúc dịu dàng đến với cô giáo của em nhân ngày Nhà giáo Việt Nam 20/11.">
+  <title>Một bó hoa dành tặng cô· 20/11</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+  <script src="./card.js" defer></script>
+  <script src="./hint-dust.js" defer></script>
+</head>
+<body>
+  <main>
+    <canvas id="ambientPetalsCanvas" aria-hidden="true"></canvas>
+    <header class="greeting">
+      <p class="occasion">Ngày Nhà giáo Việt Nam <span>20/11</span></p>
+      <h1>Một bó hoa nhỏ,<br>gửi ngàn yêu thương đến cô.</h1>
+      <p class="greeting-caption">Mong ngày hôm nay của cô sẽ thật vui vẻ và thật hạnh phúc.</p>
+    </header>
+
+    <div class="gift-layout">
+      <section class="scene-column" aria-label="Hoa và những lời chúc 20/11">
+
+
+        <div class="gift-visuals">
+          <div class="bouquet-composition">
+            <div id="bouquetStageWrapper" role="button" tabindex="0"
+              aria-label="Bó hoa hồng. Nhấn Enter để nhận lời chúc; dùng phím mũi tên để chọn bông hoa."
+              aria-describedby="bouquetHint">
+              <canvas id="bouquetCanvas" aria-hidden="true"></canvas>
+            </div>
+            <button class="envelope-button" id="openCard" type="button" aria-haspopup="dialog" aria-controls="greetingCard" aria-expanded="false" hidden>
+              <span class="envelope" aria-hidden="true"><span class="envelope-letter">Gửi đến cô</span><span class="envelope-seal">♡</span></span>
+              <span class="envelope-caption">Có một tấm thiệp em gửi tặng cô</span>
+              <span class="envelope-action">Mở thiệp</span>
+            </button>
+          </div>
+
+        </div>
+
+        <footer class="scene-footer">
+          <p id="bouquetHint" class="bouquet-hint"><canvas class="hint-dust" aria-hidden="true"></canvas><span class="hint-halo" aria-hidden="true"></span><span class="w"><span class="glint" style="--d:-5.00s">C</span><span class="glint" style="--d:-4.89s">h</span><span class="glint" style="--d:-4.78s">ạ</span><span class="glint" style="--d:-4.67s">m</span></span> <span class="w"><span class="glint" style="--d:-4.56s">m</span><span class="glint" style="--d:-4.45s">ộ</span><span class="glint" style="--d:-4.34s">t</span></span> <span class="w"><span class="glint" style="--d:-4.23s">b</span><span class="glint" style="--d:-4.12s">ô</span><span class="glint" style="--d:-4.01s">n</span><span class="glint" style="--d:-3.90s">g</span></span> <span class="w"><span class="glint" style="--d:-3.79s">h</span><span class="glint" style="--d:-3.68s">o</span><span class="glint" style="--d:-3.57s">a</span></span> <span class="w"><span class="glint" style="--d:-3.46s">đ</span><span class="glint" style="--d:-3.35s">ể</span></span> <span class="w"><span class="glint" style="--d:-3.24s">n</span><span class="glint" style="--d:-3.13s">h</span><span class="glint" style="--d:-3.02s">ậ</span><span class="glint" style="--d:-2.91s">n</span></span> <span class="w"><span class="glint" style="--d:-2.80s">l</span><span class="glint" style="--d:-2.69s">ờ</span><span class="glint" style="--d:-2.58s">i</span></span> <span class="w"><span class="glint" style="--d:-2.47s">c</span><span class="glint" style="--d:-2.36s">h</span><span class="glint" style="--d:-2.25s">ú</span><span class="glint" style="--d:-2.14s">c</span></span><span class="spark" style="left:22.9%;top:8px;--d:-2.86s;--s:15px;--t:4.3s"></span><span class="spark" style="left:87.2%;top:12px;--d:-3.64s;--s:10px;--t:3.8s"></span><span class="spark" style="left:28.4%;top:-18px;--d:-0.06s;--s:14px;--t:3.1s"></span><span class="spark" style="left:71.9%;top:-4px;--d:-4.15s;--s:8px;--t:3.7s"></span><span class="spark" style="left:87.6%;top:8px;--d:-2.77s;--s:8px;--t:4.5s"></span><span class="spark" style="left:52.1%;top:-11px;--d:-2.92s;--s:13px;--t:3.0s"></span><span class="spark" style="left:67.8%;top:-13px;--d:-0.56s;--s:8px;--t:3.7s"></span><span class="spark" style="left:53.1%;top:3px;--d:-1.81s;--s:10px;--t:3.3s"></span><span class="spark" style="left:12.9%;top:-3px;--d:-0.34s;--s:11px;--t:3.3s"></span><span class="spark" style="left:85.6%;top:24px;--d:-3.40s;--s:9px;--t:3.2s"></span><span class="spark" style="left:47.2%;top:6px;--d:-0.90s;--s:10px;--t:4.4s"></span><span class="spark" style="left:41.9%;top:5px;--d:-4.30s;--s:14px;--t:3.5s"></span><span class="spark" style="left:47.8%;top:-1px;--d:-0.12s;--s:9px;--t:3.3s"></span><span class="spark" style="left:65.8%;top:13px;--d:-0.01s;--s:9px;--t:3.9s"></span><span class="spark" style="left:68.4%;top:-4px;--d:-2.57s;--s:13px;--t:3.9s"></span><span class="spark" style="left:58.6%;top:-7px;--d:-3.01s;--s:13px;--t:4.3s"></span><span class="spark" style="left:35.9%;top:20px;--d:-4.18s;--s:11px;--t:3.2s"></span><span class="spark" style="left:15.1%;top:-7px;--d:-3.50s;--s:13px;--t:3.3s"></span><span class="spark" style="left:12.9%;top:15px;--d:-4.04s;--s:11px;--t:3.7s"></span><span class="spark" style="left:87.2%;top:19px;--d:-0.06s;--s:13px;--t:3.8s"></span><span class="spark" style="left:39.3%;top:-3px;--d:-4.21s;--s:11px;--t:3.3s"></span><span class="spark" style="left:15.4%;top:8px;--d:-3.48s;--s:15px;--t:3.1s"></span><span class="spark" style="left:32.5%;top:-2px;--d:-2.96s;--s:8px;--t:3.7s"></span><span class="spark" style="left:23.3%;top:-14px;--d:-3.92s;--s:10px;--t:4.6s"></span><span class="spark" style="left:68.2%;top:12px;--d:-0.22s;--s:10px;--t:4.5s"></span><span class="spark" style="left:51.0%;top:12px;--d:-0.13s;--s:11px;--t:4.4s"></span><span class="spark" style="left:38.5%;top:-9px;--d:-3.97s;--s:14px;--t:3.8s"></span><span class="spark" style="left:80.4%;top:12px;--d:-1.39s;--s:12px;--t:3.2s"></span><span class="spark" style="left:66.2%;top:6px;--d:-3.08s;--s:8px;--t:3.4s"></span><span class="spark" style="left:35.4%;top:-3px;--d:-3.83s;--s:14px;--t:3.4s"></span></p>
+          <p id="roseWish" class="rose-wish" role="status" aria-live="polite" aria-atomic="true"></p>
+          <button class="text-button" id="replayBloom" type="button">Cho hoa nở lại <span aria-hidden="true">↻</span></button>
+        </footer>
+      </section>
+
+      <dialog id="greetingCard" class="card-dialog" aria-labelledby="cardTitle">
+        <div class="letter-paper">
+          <button class="close-button" id="closeCard" type="button" aria-label="Đóng thiệp">×</button>
+          <div id="cardReading">
+            <div class="letter-date" aria-label="Ngày 20 tháng 11"><span>20</span><span class="date-stem" aria-hidden="true"></span><span>11</span></div>
+            <p class="letter-recipient">Gửi <span id="cardRecipient">cô Phạm Thị Hiền</span>,</p>
+            <h2 id="cardTitle">Chúc cô luôn mạnh khỏe<br>hạnh phúc và giữ mãi ngọn lửa nhiệt huyết với nghề</h2>
+            <div class="letter-flower" aria-hidden="true">❀</div>
+            <p id="cardMessage" class="letter-message"></p>
+            <div class="letter-signoff"><p>Với thật nhiều thương mến,</p><p id="cardSender" class="letter-signature"></p></div>
+            <div class="letter-fold" aria-hidden="true"></div>
+            <div class="letter-actions"><button id="viewAlbum" class="text-button" type="button" aria-controls="memoryAlbum">Xem album <span aria-hidden="true">♡</span></button></div>
+          </div>
+        </div>
+      </dialog>
+    </div>
+    <section id="memoryAlbum" class="memory-album" aria-labelledby="albumTitle" hidden>
+      <header class="album-heading">
+        <p class="album-note">Một chút kỷ niệm, dành riêng cho cô</p>
+        <h2 id="albumTitle">Những khoảnh khắc thương yêu</h2>
+        <button id="toggleAlbum" class="text-button" type="button" aria-expanded="false" aria-controls="albumPhotos">Xòe album <span aria-hidden="true">♡</span></button>
+      </header>
+      <div id="albumPhotos" class="album-photos">
+        <figure class="portrait-card album-card">
+          <div class="portrait-photo"><img src="./assets/hien1.jpg" alt="Ảnh kỷ niệm thứ nhất của người nhận thiệp" width="880" height="1587" decoding="async"></div>
+          <figcaption><span class="portrait-dedication">Một nụ cười rất thương.</span><span class="portrait-date">Những ngày thật vui</span></figcaption>
+        </figure>
+        <figure class="portrait-card album-card">
+          <div class="portrait-photo"><img src="./assets/hien2.jpg" alt="Ảnh kỷ niệm thứ hai của người nhận thiệp" width="900" height="1618" decoding="async" loading="lazy"></div>
+          <figcaption><span class="portrait-dedication">Người em yêu quý.</span><span class="portrait-date">Một khoảnh khắc dịu dàng</span></figcaption>
+        </figure>
+        <figure class="portrait-card album-card">
+          <div class="portrait-photo"><img src="./assets/hien3.jpg" alt="Ảnh kỷ niệm thứ ba của người nhận thiệp" width="900" height="1503" decoding="async" loading="lazy"></div>
+          <figcaption><span class="portrait-dedication">Mong cô luôn rạng rỡ.</span><span class="portrait-date">Hôm nay và cả mai sau</span></figcaption>
+        </figure>
+      </div>
+      <a class="text-button album-garden-link" href="./garden.html">Ngắm vườn hoa <span aria-hidden="true">❀</span></a>
+      <p class="album-footnote">Có những điều nhỏ, nhưng làm em thấy vui.</p>
+    </section>
+    <noscript><p class="noscript-message">Bật JavaScript để ngắm hoa nở và mở thiệp 20/11 nhé.</p></noscript>
+  </main>
+</body>
+</html>
